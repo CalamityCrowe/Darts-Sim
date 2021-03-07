@@ -1,6 +1,2 @@
-﻿  GameRules.cpp
-  Main.cpp
-  Player.cpp
-  Rules.cpp
-  Generating Code...
+﻿  Game.cpp
   301Darts.vcxproj -> F:\Uni Stuff\CMP102\301Darts\Debug\301Darts.exe

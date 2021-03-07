@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="1 Game to 2 players">
+    <Position X="8.998" Y="1.45" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="constructor for the player will make all the values null or 0 and then setters will be used to set the actual values like the name">
+    <Position X="8.894" Y="4.306" Height="0.976" Width="2.135" />
+  </Comment>
+  <Comment CommentText="1 Game to 1 Rules">
+    <Position X="13.343" Y="6.362" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Game">
+    <Position X="11.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABQIAAAAAAQAIAAqgAQAAACAAAAAAAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ActiveRules" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Player">
+    <Position X="5.75" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABEEAhAAAUAQAEEEwQAIQAAQEAEAGgCAACAEAQCAABA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rules">
+    <Position X="11.75" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAABAAAAAAAAAAAwAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="threezeroonerules">
+    <Position X="10.5" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="fivezeroonerules">
+    <Position X="13" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

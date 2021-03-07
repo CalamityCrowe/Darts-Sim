@@ -1,12 +1,25 @@
 #pragma once
-#include "GameRules.h"
-class ThreeZeroOneRules : public GameRules
-{
+#include <iostream>
 
+class Rules
+{
+protected:
+	int STARTSCORE;
+
+public:
+	Rules();
+	~Rules();
+	int getSTARTSCORE();
+};
+class threezeroonerules : public Rules
+{
+public:
+	threezeroonerules();
 };
 
 
-class FiveZeroOneRules : public GameRules
+class fivezeroonerules : public Rules
 {
-	
+public:
+	fivezeroonerules();
 };
