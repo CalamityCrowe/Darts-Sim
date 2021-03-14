@@ -5,19 +5,21 @@ using namespace std;
 class Player
 {
 private:
-	
-	string PlayerName ;
-	
+
+	string PlayerName;
+
 	int score;
 	int numberOfWins;
 	int chanceOfHittingBull;
-	int numOfTurns;
 	int numOfHits;
 	int numOfThrows;
-	
+
+	int totalThrows,totalHits;
+
 	bool activeTurn;
-	
+
 	float averageHits;
+	float totalAverageHits;
 
 public:
 	Player();
@@ -31,23 +33,26 @@ public:
 	int getChanceOfHitting();
 	bool getActiveTurn();
 
-	int ThrowBull(int[2][21]);
-	int ThrowTreble(int[2][21]);
-	int ThrowDouble(int[2][21]);
-	int ThrowSingle(int[2][21]);
+
+	int ThrowBull();
+	int ThrowTreble(int[2][21],int);
+	int ThrowDouble(int[2][21],int);
+	int ThrowSingle(int[2][21],int);
 
 	void setPlayername(string);
 	void setChanceOfHitting(int);
 	void setScore(int);
 	void setActiveTurn(bool);
-	void setNumberOfWins(int); 
+	void setNumberOfWins(int);
 	void setThrows(int);
 	void setHits(int);
 
-	void ResetPlayer();
+
+	void ResetPlayer(int);
+	void TotalReset(int);
 
 	void CalculateAverageHits();
 
-	
+
 };
 
