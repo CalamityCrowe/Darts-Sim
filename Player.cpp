@@ -156,7 +156,7 @@ int Player::ThrowBull()
 	}
 
 }
-int Player::ThrowTreble(int Dartboard[2][21], int Target)// target is the value that is getting aimed at initially
+int Player::ThrowTreble(int Dartboard[2][21], int Target) // target is the value that is getting aimed at initially
 {
 	int r = rand() % 100;
 	numOfThrows++;
@@ -181,27 +181,27 @@ int Player::ThrowTreble(int Dartboard[2][21], int Target)// target is the value 
 	}
 	else if (r < 93)
 	{
-		cout << getName() << "hit " << Dartboard[0][Target + 1] * 3 << " and the score is now " << getScore() - (Dartboard[0][Target + 1] * 3) << "\n\n";
+		cout << getName() << "hit " << Dartboard[0][Target] * 3 << " and the score is now " << getScore() - (Dartboard[0][Target] * 3) << "\n\n";
 
-		return 3 * Dartboard[0][Target + 1];
+		return 3 * Dartboard[0][Target];
 	}
 	else if (r < 96)
 	{
-		cout << getName() << " hit " << Dartboard[1][Target + 1] * 3 << " and the score is now " << getScore() - (Dartboard[1][Target + 1] * 3) << "\n\n";
+		cout << getName() << " hit " << Dartboard[1][Target] * 3 << " and the score is now " << getScore() - (Dartboard[1][Target] * 3) << "\n\n";
 
-		return 3 * Dartboard[1][Target + 1];
+		return 3 * Dartboard[1][Target];
 	}
 	else if (r < 98)
 	{
-		cout << getName() << " hit " << Dartboard[0][Target + 1] << " and the score is now " << getScore() - (Dartboard[0][Target + 1]) << "\n\n";
+		cout << getName() << " hit " << Dartboard[0][Target] << " and the score is now " << getScore() - (Dartboard[0][Target]) << "\n\n";
 
-		return Dartboard[0][Target + 1];
+		return Dartboard[0][Target];
 	}
 	else
 	{
-		cout << getName() << " hit " << Dartboard[1][Target + 1] << " and the score is now " << getScore() - (Dartboard[1][Target + 1]) << "\n\n";
+		cout << getName() << " hit " << Dartboard[1][Target] << " and the score is now " << getScore() - (Dartboard[1][Target]) << "\n\n";
 
-		return Dartboard[1][Target + 1];
+		return Dartboard[1][Target];
 	}
 
 
@@ -237,27 +237,27 @@ int Player::ThrowDouble(int Dartboard[2][21], int Target)
 	}
 	else if (r < 93)
 	{
-		cout << getName() << " hit " << Dartboard[0][Target + 1] * 2 << " and the score is now " << getScore() - (Dartboard[0][Target + 1] * 2) << "\n\n";
+		cout << getName() << " hit " << Dartboard[0][Target] * 2 << " and the score is now " << getScore() - (Dartboard[0][Target] * 2) << "\n\n";
 
 		return 2 * Dartboard[0][Target];
 	}
 	else if (r < 96)
 	{
-		cout << getName() << " hit " << Dartboard[1][Target + 1] * 2 << " and the score is now " << getScore() - (Dartboard[1][Target + 1] * 2) << "\n\n";
+		cout << getName() << " hit " << Dartboard[1][Target] * 2 << " and the score is now " << getScore() - (Dartboard[1][Target] * 2) << "\n\n";
 
 		return 2 * Dartboard[1][Target];
 	}
 	else if (r < 98)
 	{
-		cout << getName() << " hit " << Dartboard[0][Target + 1] << " and the score is now " << getScore() - (Dartboard[0][Target + 1]) << "\n\n";
+		cout << getName() << " hit " << Dartboard[0][Target] << " and the score is now " << getScore() - (Dartboard[0][Target]) << "\n\n";
 
 		return Dartboard[0][Target];
 	}
 	else
 	{
-		cout << getName() << " hit " << Dartboard[1][Target + 1] << " and the score is now " << getScore() - (Dartboard[1][Target + 1]) << "\n\n";
+		cout << getName() << " hit " << Dartboard[1][Target] << " and the score is now " << getScore() - (Dartboard[1][Target]) << "\n\n";
 
-		return Dartboard[1][Target + 1];
+		return Dartboard[1][Target];
 
 	}
 
@@ -307,16 +307,16 @@ int Player::ThrowSingle(int Dartboard[2][21], int Target)
 		}
 		else if (r < 92)
 		{
-			cout << getName() << " hit " << Dartboard[0][Target + 1] << " and the score is now " << getScore() - Dartboard[0][Target + 1] << "\n\n";
+			cout << getName() << " hit " << Dartboard[0][Target] << " and the score is now " << getScore() - Dartboard[0][Target] << "\n\n";
 
-			return Dartboard[0][Target + 1];
+			return Dartboard[0][Target];
 		}
 		else if (r < 96)
 		{
-			cout << getName() << " hit " << Dartboard[1][Target + 1] << " and the score is now " << getScore() - Dartboard[1][Target + 1] << "\n\n";
+			cout << getName() << " hit " << Dartboard[1][Target] << " and the score is now " << getScore() - Dartboard[1][Target] << "\n\n";
 
 
-			return Dartboard[1][Target + 1];
+			return Dartboard[1][Target];
 		}
 		else if (r < 98)
 		{
@@ -326,7 +326,7 @@ int Player::ThrowSingle(int Dartboard[2][21], int Target)
 		}
 		else
 		{
-			cout << getName() << " hit " << Target * 2 << " and the score is now " << getScore() - (Target * 2) << "\n\n";
+			cout << getName() << " hit " << Target * 2 << " and the score is now " << getScore() - (Target * 2) << "\n";
 
 			return 2 * Target;
 		}
